@@ -83,3 +83,23 @@ class Person {
 const brad = new Person(1, "Brad Trasov");
 const mike = new Person(2, "Mike Jordan");
 console.log(brad, mike);
+//data modifiers
+//there is three types of data modifiers: public private and protected
+//private - only inside of class
+//protected only inside of class or from instance of the class
+//public (default) fully accesible
+class Person2 {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+        console.log(123);
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+//   brad2.id = 5 because of id is private its only accesible inside of class
+// console.log(brad2.id) //also will give error because of private
+const brad2 = new Person(1, "Brad Trasov 2");
+const mike2 = new Person(2, "Mike Jordan 2");
+// console.log(brad2.register());
