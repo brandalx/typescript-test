@@ -103,3 +103,11 @@ class Person2 {
 const brad2 = new Person(1, "Brad Trasov 2");
 const mike2 = new Person(2, "Mike Jordan 2");
 // console.log(brad2.register());
+//generics
+//instead of having any we can use <T> here whic is placeholder of the type, and then we define type in the beggining of calling function. allows to create  reuseble components whith any data types we want
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(["brad", "john", "joe"]);
+strArray.push("hello");
