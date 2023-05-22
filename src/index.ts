@@ -10,3 +10,13 @@ ids.push(5);
 
 //tuple
 let person: [number, string, boolean] = [1, "Brad", true];
+
+//tuple array
+let employee: [number, string][];
+
+employee = [
+  [1, "Brad"],
+  [3, "John"],
+  [4, "Jill"],
+  [4, "Jill"],
+];
