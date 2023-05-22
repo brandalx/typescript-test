@@ -70,3 +70,18 @@ const user2: User = {
 let cid: any = 1; //firstly its in type of any
 // let customerId = <number>cid //just different approach
 let customerId = cid as number; //then we reassign any to declared type of number
+
+//functions
+function addNum(x: number, y: number): number {
+  //arguments type and returning function type
+  return x + y; //meanwhile function can only return number type
+}
+
+console.log(addNum(3, 5));
+
+// void function that does not returns value
+
+function log(message: string | number): void {
+  //function des not return anything then its void
+  console.log(message);
+}
