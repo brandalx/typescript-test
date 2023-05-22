@@ -63,3 +63,11 @@ function log(message) {
     //function des not return anything then its void
     console.log(message);
 }
+const user3 = {
+    id: 1,
+    name: "John",
+};
+const p1 = 1;
+// for interface will NOT work
+//    interface PointInterface = number  | string
+//    const p2: PointInterface = 1

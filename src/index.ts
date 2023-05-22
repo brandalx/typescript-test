@@ -85,3 +85,29 @@ function log(message: string | number): void {
   //function des not return anything then its void
   console.log(message);
 }
+
+//Interfaces
+
+interface UserInterface {
+  readonly id: number; //readonly is cannot be overwritten
+  name: string;
+  age?: number; //? is optional parameter
+}
+
+const user3: UserInterface = {
+  id: 1,
+  name: "John",
+};
+
+// user3.id = 5
+// because id is on readonly its  cannot be overwritten
+
+//difference is  - type can be used with premitives and unions, interfaces CANNOT
+
+// for type will work
+type Point = number | string;
+const p1: Point = 1;
+
+// for interface will NOT work
+//    interface PointInterface = number  | string
+//    const p2: PointInterface = 1
