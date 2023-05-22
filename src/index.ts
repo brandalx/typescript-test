@@ -111,3 +111,15 @@ const p1: Point = 1;
 // for interface will NOT work
 //    interface PointInterface = number  | string
 //    const p2: PointInterface = 1
+
+//interfaces with functions
+interface MathFunc {
+  (x: number, y: number): number;
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y; //wil work because is same as interface
+
+// const add2: MathFunc = (x: number, y: string): number => x + y;
+//wil not work because its not same as interface
+
+const sub: MathFunc = (x: number, y: number): number => x + y; //wil work because is same as interface

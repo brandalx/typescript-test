@@ -68,6 +68,7 @@ const user3 = {
     name: "John",
 };
 const p1 = 1;
-// for interface will NOT work
-//    interface PointInterface = number  | string
-//    const p2: PointInterface = 1
+const add = (x, y) => x + y; //wil work because is same as interface
+// const add2: MathFunc = (x: number, y: string): number => x + y;
+//wil not work because its not same as interface
+const sub = (x, y) => x + y; //wil work because is same as interface
