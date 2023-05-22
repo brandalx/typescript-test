@@ -72,3 +72,14 @@ const add = (x, y) => x + y; //wil work because is same as interface
 // const add2: MathFunc = (x: number, y: string): number => x + y;
 //wil not work because its not same as interface
 const sub = (x, y) => x + y; //wil work because is same as interface
+//Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+        console.log(123);
+    }
+}
+const brad = new Person(1, "Brad Trasov");
+const mike = new Person(2, "Mike Jordan");
+console.log(brad, mike);

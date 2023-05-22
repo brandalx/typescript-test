@@ -123,3 +123,19 @@ const add: MathFunc = (x: number, y: number): number => x + y; //wil work becaus
 //wil not work because its not same as interface
 
 const sub: MathFunc = (x: number, y: number): number => x + y; //wil work because is same as interface
+
+//Classes
+class Person {
+  id: number;
+  name: string;
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+    console.log(123);
+  }
+}
+
+const brad = new Person(1, "Brad Trasov");
+const mike = new Person(2, "Mike Jordan");
+
+console.log(brad, mike);
