@@ -48,3 +48,7 @@ const user2 = {
     id: 1,
     name: "John",
 };
+//type asssertion
+let cid = 1; //firstly its in type of any
+// let customerId = <number>cid //just different approach
+let customerId = cid; //then we reassign any to declared type of number
