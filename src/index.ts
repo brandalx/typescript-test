@@ -25,3 +25,21 @@ employee = [
 
 let pid: string | number; //could be string or number eathier
 pid = 22;
+
+//enum
+enum Direction1 {
+  Up = 1, //will starts from one / if not will start from 0
+  Down, //will countinue to evalueta previous + 1
+  Left, //will countinue to evalueta previous + 1
+  Right, //will countinue to evalueta previous + 1
+}
+
+enum Direction2 {
+  Up = "Up", //wil print declared string (Up here)
+  Down = "Down",
+  Left = "Left",
+  Right = "Right",
+}
+
+console.log(Direction1.Left);
+console.log(Direction2.Left);
