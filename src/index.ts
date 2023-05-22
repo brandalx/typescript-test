@@ -1,3 +1,21 @@
+//important notes
+//TSC is typescript compiler
+//for mac run gloably sudo npm i -g typescript
+/*
+then new file > index.js
+then write something and then tsc index.js
+tsc index --watch (watching for changes)
+tsc --init (creates ts config file)
+is important there:
+"module": "commonjs"
+"rootDir": "./src"
+"outDir": "./dist"
+"target": "es6"
+then we can just run tsc
+or node index
+
+*/
+
 //basic types
 let id: number = 5;
 console.log("ID:", id);
