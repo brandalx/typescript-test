@@ -38,3 +38,13 @@ var Direction2;
 })(Direction2 || (Direction2 = {}));
 console.log(Direction1.Left);
 console.log(Direction2.Left);
+//objects
+//first example of type declaration
+const user1 = {
+    id: 1,
+    name: "John",
+};
+const user2 = {
+    id: 1,
+    name: "John",
+};

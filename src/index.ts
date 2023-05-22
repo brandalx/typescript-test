@@ -43,3 +43,25 @@ enum Direction2 {
 
 console.log(Direction1.Left);
 console.log(Direction2.Left);
+
+//objects
+
+//first example of type declaration
+const user1: {
+  id: number;
+  name: string;
+} = {
+  id: 1,
+  name: "John",
+};
+
+//second example of type declaration (separated)
+type User = {
+  id: number;
+  name: string;
+};
+
+const user2: User = {
+  id: 1,
+  name: "John",
+};
