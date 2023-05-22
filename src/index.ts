@@ -20,3 +20,8 @@ employee = [
   [4, "Jill"],
   [4, "Jill"],
 ];
+
+// union
+
+let pid: string | number; //could be string or number eathier
+pid = 22;
